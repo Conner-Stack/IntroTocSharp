@@ -1,0 +1,9 @@
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\obj\Debug\Button practice.csprojResolveAssemblyReference.cache
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\obj\Debug\Button practice.csproj.GenerateResource.Cache
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

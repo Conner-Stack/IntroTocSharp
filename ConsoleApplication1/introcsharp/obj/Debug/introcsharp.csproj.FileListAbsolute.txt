@@ -1,0 +1,6 @@
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\introcsharp\bin\Debug\introcsharp.exe.config
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\introcsharp\obj\Debug\introcsharp.csprojResolveAssemblyReference.cache
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\introcsharp\bin\Debug\introcsharp.exe
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\introcsharp\bin\Debug\introcsharp.pdb
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\introcsharp\obj\Debug\introcsharp.exe
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\introcsharp\obj\Debug\introcsharp.pdb

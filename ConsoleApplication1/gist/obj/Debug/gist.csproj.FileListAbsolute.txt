@@ -1,0 +1,5 @@
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\gist\bin\Debug\gist.exe.config
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\gist\bin\Debug\gist.exe
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\gist\bin\Debug\gist.pdb
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\gist\obj\Debug\gist.exe
+C:\Users\conner.stack1\Documents\GitHub\ConsoleApplication1\gist\obj\Debug\gist.pdb
