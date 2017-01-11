@@ -76,6 +76,11 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
         
 }
