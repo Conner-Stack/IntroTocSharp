@@ -13,6 +13,8 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         public char achar = '1';
+        public int xp;
+        public float needed;
         public Form1()
         {
             InitializeComponent();
@@ -20,37 +22,38 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
              progressBar1.Value += 5;
-            if (progressBar1.Maximum == 100)
-                textBox1.Text = "lvl. 1" ;
-            if (progressBar1.Maximum == 200)
-                textBox1.Text = "lvl. 2";
+            xp += 5;
             if(progressBar1.Value == progressBar1.Maximum)
             {
                 progressBar1.Value = 0;
                 progressBar1.Maximum += 100;
-                textBox1.Text = "level up";
+                achar++;
             }
-        
+            needed = xp / progressBar1.Maximum * 100;
+            textBox1.Text = "lvl. " + achar;
+            textBox2.Text = "Total XP: " + xp;
+            textBox3.Text = "xp needed: %" + needed;
         }
         private void subButton_Click_1(object sender, EventArgs e)
         {
-            progressBar1.Increment(-5);
-            if(progressBar1.Maximum == 100)
-                textBox1.Text = "lvl. 1";           
-            if(progressBar1.Maximum == 200)
-                textBox1.Text = "lvl. 2";
-            if (progressBar1.Value == progressBar1.Minimum)
-            {
-                progressBar1.Maximum += -100;
-                progressBar1.Value = progressBar1.Maximum;
-                textBox1.Text = "level down";
+            progressBar1.Value -= 5;
+            xp -= 5;
+                if (progressBar1.Value == progressBar1.Minimum && progressBar1.Maximum != 100)
+                {
+                    progressBar1.Maximum += -100;
+                    progressBar1.Value = progressBar1.Maximum;
+                achar--;
             }
+            needed = xp / progressBar1.Maximum * 100;
+            textBox1.Text = "lvl. " + achar;
+            textBox2.Text = "Total XP: " + xp;
+            textBox3.Text = "xp needed: %" + needed;
         }
     
         private void progressBar1_Click(object sender, EventArgs e)
@@ -62,6 +65,16 @@ namespace WindowsFormsApplication1
         {
 
         }
-}
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
         
 }
