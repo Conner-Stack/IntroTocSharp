@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
     {
         public char achar = '1';
         public int xp;
-        public float needed;
+        
         public Form1()
         {
             InitializeComponent();
@@ -35,10 +35,11 @@ namespace WindowsFormsApplication1
                 progressBar1.Maximum += 100;
                 achar++;
             }
-            needed = xp / progressBar1.Maximum * 100;
+            float needed = progressBar1.Value;
+                needed = needed / progressBar1.Maximum * 100;
             textBox1.Text = "lvl. " + achar;
             textBox2.Text = "Total XP: " + xp;
-            textBox3.Text = "xp needed: %" + needed;
+            textBox3.Text = "xp %" + needed;
         }
         private void subButton_Click_1(object sender, EventArgs e)
         {
@@ -50,10 +51,10 @@ namespace WindowsFormsApplication1
                     progressBar1.Value = progressBar1.Maximum;
                 achar--;
             }
-            needed = xp / progressBar1.Maximum * 100;
+            float needed = progressBar1.Value * 100;
             textBox1.Text = "lvl. " + achar;
             textBox2.Text = "Total XP: " + xp;
-            textBox3.Text = "xp needed: %" + needed;
+            textBox3.Text = "xp %" + needed;
         }
     
         private void progressBar1_Click(object sender, EventArgs e)
