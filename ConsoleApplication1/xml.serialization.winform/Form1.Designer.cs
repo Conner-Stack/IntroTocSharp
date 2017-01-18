@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication3
+﻿namespace xml.serialization.winform
 {
     partial class Form1
     {

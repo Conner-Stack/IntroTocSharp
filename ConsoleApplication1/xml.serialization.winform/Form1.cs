@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication3
+namespace xml.serialization.winform
 {
     public partial class Form1 : Form
     {

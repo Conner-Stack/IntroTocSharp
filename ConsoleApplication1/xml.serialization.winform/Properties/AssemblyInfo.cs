@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WindowsFormsApplication3")]
+[assembly: AssemblyTitle("xml.serialization.winform")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Academy of Interactive Entertainment")]
-[assembly: AssemblyProduct("WindowsFormsApplication3")]
+[assembly: AssemblyProduct("xml.serialization.winform")]
 [assembly: AssemblyCopyright("Copyright © Academy of Interactive Entertainment 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3ca8510a-f2ee-4706-8a8d-d5f7d5e8b3a6")]
+[assembly: Guid("1c79ffcf-b7c0-41ba-a334-f943f9364686")]
 
 // Version information for an assembly consists of the following four values:
 //
