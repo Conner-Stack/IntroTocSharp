@@ -1,0 +1,9 @@
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\bin\Debug\xml.serialization.winform.exe.config
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\bin\Debug\xml.serialization.winform.exe
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\bin\Debug\xml.serialization.winform.pdb
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\obj\Debug\xml.serialization.winform.csprojResolveAssemblyReference.cache
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\obj\Debug\xml.serialization.winform.Form1.resources
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\obj\Debug\xml.serialization.winform.Properties.Resources.resources
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\obj\Debug\xml.serialization.winform.csproj.GenerateResource.Cache
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\obj\Debug\xml.serialization.winform.exe
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\xml.serialization.winform\obj\Debug\xml.serialization.winform.pdb

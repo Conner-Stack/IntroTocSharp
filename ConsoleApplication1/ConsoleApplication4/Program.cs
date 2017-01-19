@@ -15,9 +15,18 @@ namespace ConsoleApplication4
         private string m_id;
         public Student() { }
         public Student(string a, int b, string c) { }
-        public string Name;
-        public string Age;
-        public string ID;
+        public string Name
+        { get { return m_name; }
+        set { m_name = value; }
+        }
+        public string Age
+        { get { return m_age.ToString(); }
+        set { m_age = value; }
+        }
+        public string ID
+        { get { return m_id; }
+        set { m_id = value; }
+        }
         public static void Serialize(string fileName, T data)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
