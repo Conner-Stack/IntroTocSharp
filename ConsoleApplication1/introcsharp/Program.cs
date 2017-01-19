@@ -14,7 +14,11 @@ namespace introcsharp
     class Entity
     {
         public Entity() { }
-        public Entity(int h, int att) { }
+        public Entity(int h, int att)
+        {
+            m_health = h;
+            m_attackpwr = att;
+        }
         private int m_health;
         public int Health
         {
