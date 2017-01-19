@@ -1,0 +1,1 @@
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\ConsoleApplication1\finite.state.machine\bin\Debug\finite.state.machine.exe.config
