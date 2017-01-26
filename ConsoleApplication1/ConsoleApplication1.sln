@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "introcsharp", "introcsharp\introcsharp.csproj", "{B1637058-7DAB-4A82-B67C-4FFA5503F146}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "system.xml.serialization", "ConsoleApplication4\system.xml.serialization.csproj", "{23A8D25B-D8C9-431E-A8B9-43EDDAFD938F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xml.serialization.winform", "xml.serialization.winform\xml.serialization.winform.csproj", "{1C79FFCF-B7C0-41BA-A334-F943F9364686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "finite.state.machine", "finite.state.machine\finite.state.machine.csproj", "{D316F432-AA16-401D-8344-229224FE8B8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1C79FFCF-B7C0-41BA-A334-F943F9364686}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C79FFCF-B7C0-41BA-A334-F943F9364686}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C79FFCF-B7C0-41BA-A334-F943F9364686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D316F432-AA16-401D-8344-229224FE8B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D316F432-AA16-401D-8344-229224FE8B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D316F432-AA16-401D-8344-229224FE8B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D316F432-AA16-401D-8344-229224FE8B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

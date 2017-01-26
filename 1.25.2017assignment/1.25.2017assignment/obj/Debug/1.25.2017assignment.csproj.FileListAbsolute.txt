@@ -1,0 +1,6 @@
+c:\users\conner.stack1\documents\visual studio 2015\Projects\1.25.2017assignment\1.25.2017assignment\bin\Debug\1.25.2017assignment.exe.config
+C:\Users\conner.stack1\Documents\Visual Studio 2015\Projects\1.25.2017assignment\1.25.2017assignment\bin\Debug\1.25.2017assignment.exe
+C:\Users\conner.stack1\Documents\Visual Studio 2015\Projects\1.25.2017assignment\1.25.2017assignment\bin\Debug\1.25.2017assignment.pdb
+C:\Users\conner.stack1\Documents\Visual Studio 2015\Projects\1.25.2017assignment\1.25.2017assignment\obj\Debug\1.25.2017assignment.csprojResolveAssemblyReference.cache
+C:\Users\conner.stack1\Documents\Visual Studio 2015\Projects\1.25.2017assignment\1.25.2017assignment\obj\Debug\1.25.2017assignment.exe
+C:\Users\conner.stack1\Documents\Visual Studio 2015\Projects\1.25.2017assignment\1.25.2017assignment\obj\Debug\1.25.2017assignment.pdb
