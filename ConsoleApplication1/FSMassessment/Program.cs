@@ -7,123 +7,69 @@ using System.Diagnostics;
 
 namespace FSMassessment
 {
-    public enum PlayerState
+    public  delegate void Handler();
+    class Teacher
     {
-        INIT = 0,
-        IDLE = 1,
-        WALK = 2,
-        RUN = 3,
-    }
-    class State
-    {
-        public State()
-        { }
-        public State(Enum e)
-        {
-            name = e.ToString();
-        }
-        public string name;
-        public delegate void OnEnter();
-        public delegate void OnExit();
-        public OnEnter onEnter;
-        public OnExit onExit;
 
-        public void AddEnterFunction(Delegate d)
+        Handler onShout;
+        public void AddFunction(Delegate function)
         {
-            onEnter += d as OnEnter;
+            onEnter += function as Handler;
+        }
+        string name;
+        public Handler onEnter;
+        public Handler onExit;
+        delegate void DOIT();
+        delegate void SHOUT();
+        private static void main()
+        {
+
         }
     }
-
-    class FSM<T>
+    //shows how to use delegates to make functions specific to Student variable
+    delegate void Callback();
+    class Student
     {
-        //INIT->IDLE : auto/onstartup
-        //IDLE->WALK : if(keydown w,a,s,d)
-        //WALK->IDLE : if(keyup w,a,s,d)
-        //WALK->RUN  : if(keydown shift)
-        //RUN->WALK  : if(keyup shift)
-        public FSM()
+        public Student()
         {
-            states = new Dictionary<string, State>();
-            var v = Enum.GetValues(typeof(T));
-            foreach (var e in v)
-            {
-                State s = new State(e as Enum);
-                states.Add(s.name, s);
-            }
-        }
-
-        Dictionary<string, State> states;
-        State cState;
-        public void ChangeState(State state)
-        {
-            if (isValidTransition(state))
-            {
-                cState.onExit();
-                cState = state;
-                cState.onEnter();
-            }
-        }
-        public bool AddState(State state)
-        {
-            if (transitions[state.name] == null)
-            {
-                transitions.Add(state.name, new List<State>());
-                return true;
-            }
-
-            return false;
 
         }
-        public bool AddTransition<V>(V a, V b)
-        {
-            //FSM fsm = new FSM();
-            //State init = new State();
-            //State idle = new State();
-            //fsm.AddState(init);
-            //fsm.AddState(idle);
-            //usage would be fsm.AddTransition(init, idle)
+        Callback onTalk;
 
-            //access the transitions for the state
-            State s = a as State;
-            var tmp = transitions[s.name];
-
-            return true;
-        }
-        public State GetState(T e)
+        public void AddThingToSay(Callback c)
         {
-            string key = (e as State).name;
-            return states[key];
-        }
-        private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
-        private bool isValidTransition(State to)
-        {
-            var validStates = transitions[cState.name];
-            if (validStates == null)
-                return false;
-            foreach (var state in validStates)
-            {
-                if (state == to)
-                    return true;
-            }
-            return false;
-        }
-        public bool Start()
-        {
-            return true;
+            onTalk += c;
         }
 
-        public bool Update()
+        public void Talk()
         {
-            return true;
+            if(onTalk != null)
+            onTalk.Invoke();
         }
     }
-
-
-}
     class Program
     {
+       static int TaylorLove = 0;
         static void Main(string[] args)
         {
+            Student reggie = new Student();
+            reggie.AddThingToSay(HowMuchYouLoveTaylorSwift);
+            reggie.AddThingToSay(NickSaid);
+            reggie.AddThingToSay(Fight);
+            reggie.Talk();
+        }
+        static public void Fight()
+        {
+            Console.WriteLine("nick keel reggie");
+        }
+        static public void NickSaid()
+        {
+            Console.WriteLine("why you love taylor so much....");
+        }
+     static public void HowMuchYouLoveTaylorSwift()
+        {
+            TaylorLove = 9000;
+            Console.WriteLine("I love me some Taylor Swift" + TaylorLove.ToString() + "big <3 < 3");
         }
     }
 }

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xml.serialization.winform",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "finite.state.machine", "finite.state.machine\finite.state.machine.csproj", "{D316F432-AA16-401D-8344-229224FE8B8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSMassessment", "FSMassessment\FSMassessment.csproj", "{A9D5BBD3-6032-4193-83E9-6EEEEE06175C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D316F432-AA16-401D-8344-229224FE8B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D316F432-AA16-401D-8344-229224FE8B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D316F432-AA16-401D-8344-229224FE8B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D5BBD3-6032-4193-83E9-6EEEEE06175C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D5BBD3-6032-4193-83E9-6EEEEE06175C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D5BBD3-6032-4193-83E9-6EEEEE06175C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D5BBD3-6032-4193-83E9-6EEEEE06175C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
