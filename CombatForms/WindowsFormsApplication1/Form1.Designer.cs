@@ -63,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 120);
+            this.label1.Location = new System.Drawing.Point(89, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
@@ -73,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(767, 120);
+            this.label2.Location = new System.Drawing.Point(753, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
@@ -165,6 +165,8 @@
             // 
             // progressBar1
             // 
+            this.progressBar1.BackColor = System.Drawing.Color.Gold;
+            this.progressBar1.ForeColor = System.Drawing.Color.Transparent;
             this.progressBar1.Location = new System.Drawing.Point(70, 291);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(75, 18);
@@ -172,10 +174,13 @@
             // 
             // progressBar2
             // 
+            this.progressBar2.BackColor = System.Drawing.Color.Gold;
+            this.progressBar2.ForeColor = System.Drawing.Color.Transparent;
             this.progressBar2.Location = new System.Drawing.Point(70, 202);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(75, 18);
             this.progressBar2.TabIndex = 12;
+            this.progressBar2.Click += new System.EventHandler(this.progressBar2_Click);
             // 
             // progressBar3
             // 
@@ -193,6 +198,8 @@
             // 
             // progressBar5
             // 
+            this.progressBar5.BackColor = System.Drawing.Color.Gold;
+            this.progressBar5.ForeColor = System.Drawing.Color.Transparent;
             this.progressBar5.Location = new System.Drawing.Point(70, 383);
             this.progressBar5.Name = "progressBar5";
             this.progressBar5.Size = new System.Drawing.Size(75, 18);
@@ -214,6 +221,8 @@
             // 
             // progressBar8
             // 
+            this.progressBar8.BackColor = System.Drawing.Color.Gold;
+            this.progressBar8.ForeColor = System.Drawing.Color.Transparent;
             this.progressBar8.Location = new System.Drawing.Point(732, 202);
             this.progressBar8.Name = "progressBar8";
             this.progressBar8.Size = new System.Drawing.Size(75, 18);
@@ -228,6 +237,8 @@
             // 
             // progressBar10
             // 
+            this.progressBar10.BackColor = System.Drawing.Color.Gold;
+            this.progressBar10.ForeColor = System.Drawing.Color.Transparent;
             this.progressBar10.Location = new System.Drawing.Point(732, 291);
             this.progressBar10.Name = "progressBar10";
             this.progressBar10.Size = new System.Drawing.Size(75, 18);
@@ -242,10 +253,16 @@
             // 
             // progressBar12
             // 
+            this.progressBar12.BackColor = System.Drawing.Color.Gold;
+            this.progressBar12.ForeColor = System.Drawing.Color.Transparent;
             this.progressBar12.Location = new System.Drawing.Point(732, 383);
             this.progressBar12.Name = "progressBar12";
             this.progressBar12.Size = new System.Drawing.Size(75, 18);
             this.progressBar12.TabIndex = 22;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -277,6 +294,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
