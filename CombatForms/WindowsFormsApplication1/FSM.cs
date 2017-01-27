@@ -105,6 +105,8 @@ namespace WindowsFormsApplication1
     {
         private Dictionary<string, List<State>> transition;
         private Dictionary<string, State> states;
+
+
         public FSM()
         {
             states = new Dictionary<string, State>();
@@ -116,18 +118,30 @@ namespace WindowsFormsApplication1
                 states.Add(newstate.name, newstate);
             }
         }
+
+
         public State getState(T e)
         {
             string key = (e as State).name;
             return states[key];
         }
+
+
             State currstate;
+            public void changeState(State state)
+        {
+            currstate.onExit();
+            currstate = state;
+            currstate.onEnter();
+        }
+
+
         private bool ValidTrans(State next)
         {
-            var currentstate = states[currstate.name];
+            var currentstate = transition[currstate.name];
             if (states[currstate.name] == null)
             {
-                return false;
+                return false; 
             }
 
         }
