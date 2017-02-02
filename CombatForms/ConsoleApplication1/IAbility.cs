@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    interface IDamager
+    interface IAbility
     {
-       void Attack(IDamagable a,IAbility b);
-        void Cast(IDamagable a, IAbility b);
+
+        void cast(int dmg, int manacost);
+
+        void LearnAbility(IAbility a);
     }
 }
