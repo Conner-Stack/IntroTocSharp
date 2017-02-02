@@ -9,7 +9,7 @@ namespace ConsoleApplication1
     class Program
     {
 
-        class Ability : IAbility
+       public class Ability : IAbility
         {
             private int m_manacost;
             private int m_damage;
@@ -27,14 +27,15 @@ namespace ConsoleApplication1
                 get { return m_manacost; }
                 set { m_manacost = value; }
             }
-            public void cast(IDamagable a)
+            public int cast(IDamagable a)
             {
                 a.MagDamage(this.Damage);
 
+                
             }
             public void LearnAbility(IDamager a)
             {
-                
+                throw new NotImplementedException();
             }
         }
 
@@ -44,9 +45,9 @@ namespace ConsoleApplication1
 
 
 
-        class Ninja: IDamagable, IDamager
+       public class Ninja: IDamagable, IDamager
         {
-            IAbility spell;
+            
             private int m_health;
             private int m_damage;
             private int m_mana;
@@ -74,8 +75,11 @@ namespace ConsoleApplication1
             {
                 this.m_health -= value;
             }
-          public void Cast(IAbility a)
+          public void CastOn(Ability a)
             {
+                
+                this.spell.cast(a);
+                this.Mana -= this.spell.cast(a);
                 
             }
         
@@ -86,7 +90,7 @@ namespace ConsoleApplication1
             
 
         }
-        class Zombie : IDamager, IDamagable
+       public class Zombie : IDamager, IDamagable
         {
             public IAbility regen;
             public IAbility acidvom;
@@ -120,8 +124,8 @@ namespace ConsoleApplication1
 
         static void Main(string[] args)
         {
-            Ninja Brian = new Ninja(100, 25, 500);
-            
+        Ninja Brian = new Ninja(100, 25, 500);
+          
         }
     }
 }
