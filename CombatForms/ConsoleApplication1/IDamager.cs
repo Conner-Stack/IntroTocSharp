@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    interface IDamager
+   public interface IDamager
     {
-       void Rekt(IDamagable a, int b);
+       void DoDamage(IDamagable a);
     }
 }
