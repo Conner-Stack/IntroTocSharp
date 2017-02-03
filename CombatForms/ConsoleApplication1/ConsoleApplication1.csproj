@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICastable.cs" />
     <Compile Include="IDamagable.cs" />
     <Compile Include="IDamager.cs" />
     <Compile Include="Program.cs" />

@@ -10,15 +10,15 @@ namespace ConsoleApplication1
     {
         class Ninja : IDamagable, IDamager
         {
-            private IShootable gun;
-            public void PickUp(IShootable shooter)
-            {
-                gun = shooter;
-            }
-            public void ShootGun()
-            {
-                gun.Shoot();
-            }
+            //private IShootable gun;
+            //public void PickUp(IShootable shooter)
+            //{
+            //    gun = shooter;
+            //}
+            //public void ShootGun()
+            //{
+            //    gun.Shoot();
+            //}
             private int m_health;
             private int m_damage;
             public Ninja() { }
@@ -120,23 +120,23 @@ namespace ConsoleApplication1
                 {
                     Ninja Brian = new Ninja(100, 25);
                     Zombie Shawn = new Zombie(100, 20);
-                    string input =
-                        "";
-                    Brian.PickUp(new DefaultGun());
-                    while(input != "q")
-                    {
-                        input = Console.ReadLine();
+                    //string input =
+                    //    "";
+                    //Brian.PickUp(new DefaultGun());
+                    //while(input != "q")
+                    //{
+                    //    input = Console.ReadLine();
                         
-                        if (input == "m")
-                            Brian.PickUp(new MachineGun());
-                        if (input == "r")
-                            Brian.PickUp(new RocketLauncher(25));
+                    //    if (input == "m")
+                    //        Brian.PickUp(new MachineGun());
+                    //    if (input == "r")
+                    //        Brian.PickUp(new RocketLauncher(25));
 
 
 
 
-                        Brian.ShootGun();
-                    }
+                    //    Brian.ShootGun();
+                    //}
                     
                 }
             }
