@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="Defend.cs" />
     <Compile Include="EnemyParty.cs" />
     <Compile Include="FireMagic.cs" />
     <Compile Include="Form1.cs">
@@ -56,13 +57,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FSM.cs" />
+    <Compile Include="IAbilities.cs" />
     <Compile Include="ICastable.cs" />
     <Compile Include="IDamagable.cs" />
     <Compile Include="IDamager.cs" />
-    <Compile Include="IEnemyState.cs" />
     <Compile Include="IGameManager.cs" />
     <Compile Include="ILevelable.cs" />
-    <Compile Include="IPlayerState.cs" />
     <Compile Include="PlayerParty.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,7 +8,8 @@ namespace WindowsFormsApplication1
 {
     interface ICastable: IDamager
     {
-        void cast();
+        
+        void cast(IDamagable a);
     }
 }
 

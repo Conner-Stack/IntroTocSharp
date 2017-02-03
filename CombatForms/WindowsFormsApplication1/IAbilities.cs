@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
-    interface IAbilities: IDamagable
+    interface IAbilities: IDamager
     {
-        void self(IAbilities a);
+        void self(Character a);
         void enemy();
 
 

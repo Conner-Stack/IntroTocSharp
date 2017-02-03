@@ -18,6 +18,7 @@ namespace WindowsFormsApplication1
             m_mitigate = dmgreduc;
             m_newdamage = olddamage - dmgreduc;
         }
+
         public int Mitigate
         {
             get { return m_mitigate; }

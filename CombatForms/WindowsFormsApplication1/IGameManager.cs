@@ -9,7 +9,10 @@ namespace WindowsFormsApplication1
     interface IGameManager
     {
         void Start();
+        void Idle();
         void Update();
+        void TurnUp();
+        
         void Quit();
     }
 }

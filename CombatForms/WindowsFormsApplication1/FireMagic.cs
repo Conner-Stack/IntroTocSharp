@@ -12,8 +12,8 @@ namespace WindowsFormsApplication1
         private int m_manacost;
         public int Damage
         {
-            get { return m_Damage; }
-            set { m_Damage = value; }
+            get { return m_damage; }
+            set { m_damage = value; }
         }
         public int manaCost
         {

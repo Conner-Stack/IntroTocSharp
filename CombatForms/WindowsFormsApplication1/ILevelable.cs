@@ -8,5 +8,7 @@ namespace WindowsFormsApplication1
 {
     interface ILevelable
     {
+        void LevelUp(Character a);
+
     }
 }

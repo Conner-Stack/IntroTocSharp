@@ -26,6 +26,7 @@ namespace WindowsFormsApplication1
         EXIT = 3,
     }
 
+    
     class State: IGameManager
     {
         public string name;
@@ -33,10 +34,33 @@ namespace WindowsFormsApplication1
         public delegate void OnExit();
         public OnEnter onEnter;
         public OnExit onExit;
-        public void AddEnterFunction(Delegate d)
+ 
+
+        public void Start()
         {
-            onEnter += d as OnEnter;
+            throw new NotImplementedException();
         }
+
+        public void Idle()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TurnUp()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Quit()
+        {
+            throw new NotImplementedException();
+        }
+
         public State() { }
         public State(Enum e)
         {
@@ -47,7 +71,7 @@ namespace WindowsFormsApplication1
     {
         private Dictionary<string, List<State>> transition;
         private Dictionary<string, State> states;
-
+        
 
         public FSM()
         {
@@ -77,16 +101,6 @@ namespace WindowsFormsApplication1
             currstate.onEnter();
         }
 
-
-        private bool ValidTrans(State next)
-        {
-            var currentstate = transition[currstate.name];
-            if (states[currstate.name] == null)
-            {
-                return false;
-            }
-
-        }
 
 
 
