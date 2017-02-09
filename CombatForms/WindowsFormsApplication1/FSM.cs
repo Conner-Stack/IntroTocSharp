@@ -22,6 +22,9 @@ namespace combatForms
         public QuitState quitState;
         public FSM()
         {
+        }
+        public void createStates()
+        {
             startState = new StartState(this);
             idleState = new IdleState(this);
             turnUpState = new TurnUpState(this);
@@ -387,7 +390,28 @@ namespace combatForms
         {
             State = fsm;
         }
+
+        public void BotAction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dead()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EndTurn()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Idle()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PlayerAction()
         {
             throw new NotImplementedException();
         }
