@@ -11,7 +11,7 @@ namespace Singleton
         //new up when we access the property Instance
         private static singleton instance = null;
         //private because someone to new up this instance
-        private Singleton()
+        private singleton()
         {
         }
         //this is actually how we access it
