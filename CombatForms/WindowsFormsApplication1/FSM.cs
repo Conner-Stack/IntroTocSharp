@@ -44,8 +44,7 @@ namespace combatForms
 
     class StartState : IGameManager
     {
-        public readonly FSM State;
-
+        public readonly FSM State
         public StartState(FSM fsm)
         {
             State = fsm;
@@ -91,14 +90,11 @@ namespace combatForms
             throw new NotImplementedException();
         }
 
-        public void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
     class IdleState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public IdleState(FSM fsm)
         {
             State = fsm;
@@ -142,12 +138,18 @@ namespace combatForms
         {
             State.currstate = State.turnUpState;
         }
-
-
+        public void changestate()
+        {
+            //if the player dies, currstate => dedstate
+            //if the quit button is pressed, currstate => quitState
+            //if the player's turn is up, currState => turnUpState
+        }
+        
     }
     class TurnUpState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public TurnUpState(FSM fsm)
         {
             State = fsm;
@@ -191,10 +193,15 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void ChangeState()
+        {
+
+        }
     }
     class BotActionState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public BotActionState(FSM fsm)
         {
             State = fsm;
@@ -238,10 +245,15 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void changestate()
+        {
+
+        }
     }
     class PlayerActionState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public PlayerActionState(FSM fsm)
         {
             State = fsm;
@@ -285,10 +297,15 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void changestate()
+        {
+
+        }
     }
     class EndTurnState: IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public EndTurnState(FSM fsm)
         {
             State = fsm;
@@ -332,10 +349,15 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void ChangeState()
+        {
+
+        }
     }
     class DedState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public DedState(FSM fsm)
         {
             State = fsm;
@@ -379,10 +401,15 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void changestate()
+        {
+
+        }
     }
     class QuitState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public QuitState(FSM fsm)
         {
             State = fsm;
@@ -406,8 +433,12 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
-    }
+        public void changestate()
+        {
 
+        }
+    }
 }
+
 
 
