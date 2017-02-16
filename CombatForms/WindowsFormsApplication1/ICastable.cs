@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace combatForms
 {
-    interface ICastable: IDamager
+    interface ICastable
     {
         
-        void cast(IDamagable a);
+        void cast(IDamagable a, int manacost);
     }
 }
 
