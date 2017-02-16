@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace combatForms
 {
     partial class Form1
     {

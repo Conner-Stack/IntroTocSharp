@@ -8,11 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace combatForms
 {
 
     public partial class Form1 : Form
     {
+        Party A = new Party();
+        Party B = new Party();
+        Entity c1 = new Entity(100, "cloud", true, false, 4);
+        Entity ae = new Entity(50, "Aeris the Archer", true, false, 3);
+        Entity ds = new Entity(100, "Dwarf Soldier", true, false, 2);
+        Entity da = new Entity(50, "Dwarf Archer", true, false, 1);
+        class Entity
+        {
+            public Entity()
+            {
+
+            }
+            public Entity(int hp, string name, bool alive, bool block, int speed)
+            {
+
+            }
+        }
+        class Party
+        {
+            
+            publicParty()
+            {
+            
+            }
+            List<Entity> members;
+        }
+        Party combatParety;
     public void ATB(Timer T, ProgressBar P)
         {
         if(P.Value == P.Maximum)
