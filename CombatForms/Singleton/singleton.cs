@@ -1,32 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Singleton
+﻿namespace Singleton
 {
-   public class singleton
+   public class Singleton
     {
-        //new up when we access the property Instance
-        private static singleton instance = null;
-        //private because someone to new up this instance
-        private singleton()
+        // Arbitrary variables and methods
+        public string item; 
+
+        public void PrintItem()
         {
+            System.Console.WriteLine(item);
         }
-        //this is actually how we access it
-        //how u use it Singleton.instance."some other variable"
-        public static singleton Instance
+
+        // Required Members of Singleton
+        private static readonly Singleton instance;
+
+        public static Singleton Instance
         {
-            get
-            {
-                if(instance == null)
-                {
-                    instance = new singleton();
-                }
-                return instance;
-            }
+            get {return instance; }
+
+            // You cannot put a set in the property
+            // because the instance is readonly
+            // set { instance = value; }
         }
-        public string name;
+
+        private Singleton()
+        {
+            item = "default item";
+        }
     }
 }

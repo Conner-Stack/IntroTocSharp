@@ -1,1 +1,2 @@
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\bin\Debug\Singleton.exe.config
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\bin\Debug\Singleton.exe.config
