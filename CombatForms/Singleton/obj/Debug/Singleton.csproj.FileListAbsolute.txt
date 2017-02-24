@@ -1,2 +1,7 @@
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\bin\Debug\Singleton.exe.config
 C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\bin\Debug\Singleton.exe.config
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\bin\Debug\Singleton.exe
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\bin\Debug\Singleton.pdb
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\obj\Debug\Singleton.csprojResolveAssemblyReference.cache
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\obj\Debug\Singleton.exe
+C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\Singleton\obj\Debug\Singleton.pdb

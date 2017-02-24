@@ -29,7 +29,7 @@ namespace combatForms
         }
 
 
-        public void cast(IDamagable a)
+        public void cast(IDamagable a, int manacost)
         {
             this.DoDamage(a);
         }
