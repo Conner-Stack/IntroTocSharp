@@ -11,8 +11,6 @@ namespace combatForms
         void Start();
         void Idle();
         void TurnUp();
-        void BotAction();
-        void PlayerAction();
         void Dead();
         void EndTurn();        
         void Quit();

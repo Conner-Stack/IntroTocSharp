@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace combatForms
 {
-    class Character : IDamagable, IDamager, ILevelable
+   public class Character : IDamagable, IDamager
     {
         private int m_health;
         private int m_basedamage;
@@ -55,17 +55,12 @@ namespace combatForms
         }
         public void DoDamage(IDamagable a)
         {
-            throw new NotImplementedException();
+            a.TakeDamage(this.Damage);
         }
-
-        public void LevelUp(Character a)
-        {
-            throw new NotImplementedException();
-        }
-
         public void TakeDamage(int dam)
         {
-            throw new NotImplementedException();
+            this.Health -= dam;
+            
         }
     }
 }
