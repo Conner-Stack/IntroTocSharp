@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace combatForms
 {
 
-    class FSM
+    class FSM<T>
     {
 
         public IGameManager currstate;
@@ -47,8 +48,7 @@ namespace combatForms
 
     class StartState : IGameManager
     {
-        public readonly FSM State;
-
+        public readonly FSM State
         public StartState(FSM fsm)
         {
             State = fsm;
@@ -94,14 +94,11 @@ namespace combatForms
             throw new NotImplementedException();
         }
 
-        public void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
     class IdleState : IGameManager
     {
         public readonly FSM State;
+        private IGameManager changeState;
         public IdleState(FSM fsm)
         {
             State = fsm;
@@ -145,8 +142,13 @@ namespace combatForms
         {
             State.currstate = State.turnUpState;
         }
-
-
+        public void changestate()
+        {
+            //if the player health (progress) bar in winforms is valued at 0, currstate => dedstate
+            //if the quit button is pressed, currstate => quitState
+            //if the player's turn is up, currState => turnUpState
+        }
+        
     }
     class TurnUpState : IGameManager
     {
@@ -193,6 +195,11 @@ namespace combatForms
         public void TurnUp()
         {
             throw new NotImplementedException();
+        }
+        public void ChangeState()
+        {
+            //if a bot's turn is up, currstate => BotActionState
+            //if a player character's turn is up, currstate => PlayerActionState
         }
     }
     class BotActionState : IGameManager
@@ -241,6 +248,11 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void changestate()
+        {
+            //if the player health (progress) bar in winforms is valued at 0, currstate => dedstate
+            //if the quit button is pressed, currstate => quitState
+        }
     }
     class PlayerActionState : IGameManager
     {
@@ -287,6 +299,11 @@ namespace combatForms
         public void TurnUp()
         {
             throw new NotImplementedException();
+        }
+        public void changestate()
+        {
+            //if the player health (progress) bar in winforms is valued at 0, currstate => dedstate
+            //if the quit button is pressed, currstate => quitState
         }
     }
     class EndTurnState: IGameManager
@@ -335,10 +352,15 @@ namespace combatForms
         {
             throw new NotImplementedException();
         }
+        public void ChangeState()
+        {
+            //if game over boolean isn't true, change state to quitState
+        }
     }
     class DedState : IGameManager
     {
         public readonly FSM State;
+        
         public DedState(FSM fsm)
         {
             State = fsm;
@@ -381,6 +403,12 @@ namespace combatForms
         public void TurnUp()
         {
             throw new NotImplementedException();
+        }
+        public void changestate()
+        {
+            //if raised, currstate => idleState
+            //if currstate.deadstate bool == true, 
+            //currstate = endturn 
         }
     }
     class QuitState : IGameManager
@@ -431,7 +459,7 @@ namespace combatForms
             throw new NotImplementedException();
         }
     }
-
 }
+
 
 

@@ -22,19 +22,20 @@ namespace combatForms
         }
 
         WaterMagic Blizzara = new WaterMagic(45, 73);
-        
+
         public WaterMagic(int Dmg, int Mana)
         {
             m_Damage = Dmg;
             m_manacost = Mana;
         }
-        public void cast(IDamagable a)
-        {
-            this.DoDamage(a);
-        }
-
         public void DoDamage(IDamagable a)
         {
             a.TakeDamage(this.Damage);
         }
+
+        public void cast(IDamagable a, int manacost)
+        {
+            DoDamage(a);
+        }
     }
+}
