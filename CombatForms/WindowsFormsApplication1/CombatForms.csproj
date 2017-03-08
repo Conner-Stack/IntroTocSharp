@@ -55,6 +55,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FSM.cs" />
+    <Compile Include="gameSingleton.cs" />
     <Compile Include="IAbilities.cs" />
     <Compile Include="ICastable.cs" />
     <Compile Include="IDamagable.cs" />

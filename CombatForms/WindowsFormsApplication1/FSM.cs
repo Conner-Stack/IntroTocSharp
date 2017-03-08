@@ -11,7 +11,8 @@ namespace combatForms
 
     class FSM
     {
-      switch
+       
+    }
             
 
 

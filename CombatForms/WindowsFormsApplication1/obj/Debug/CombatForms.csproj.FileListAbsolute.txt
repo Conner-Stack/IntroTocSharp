@@ -1,12 +1,10 @@
-C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csprojResolveAssemblyReference.cache
-C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\combatForms.Form1.resources
-C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
-C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csproj.GenerateResource.Cache
-C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csprojResolveAssemblyReference.cache
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\combatForms.Form1.resources
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csproj.GenerateResource.Cache
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\conner.stack1\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csprojResolveAssemblyReference.cache
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\combatForms.Form1.resources
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csproj.GenerateResource.Cache
