@@ -56,14 +56,11 @@
     </Compile>
     <Compile Include="FSM.cs" />
     <Compile Include="gameSingleton.cs" />
-    <Compile Include="IAbilities.cs" />
-    <Compile Include="ICastable.cs" />
     <Compile Include="IDamagable.cs" />
     <Compile Include="IDamager.cs" />
     <Compile Include="IGameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WaterMagic.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
