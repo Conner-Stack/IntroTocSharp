@@ -13,10 +13,8 @@ namespace combatForms
 
     public partial class Form1 : Form
     {
+      
        
-    public void ATB(Timer T, ProgressBar P)
-        {
-
         public Form1()
         {
             
@@ -49,4 +47,4 @@ namespace combatForms
 
         }
     }
-}
+

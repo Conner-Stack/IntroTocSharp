@@ -8,37 +8,60 @@ using System.Windows.Forms;
 
 namespace combatForms
 {
-
-    class FSM
-    {
-        public State Current;
-
-        public List<State> States = new List<State>();
-
-        public void addState(string a)
+         public enum gameState
         {
-            State b = new State(a);
-            States.Add(b);
+            INIT = 0,
+            Start= 1,
+            Combat = 2,
+            Dead = 3,
+            Exit = 4,
         }
+    
+    public class FSM
+    {
+        public Delegate onEnter;
+        public Delegate onExit;
+        public FSM()
+        {
+            var a = Enum.GetValues(typeof(State));
+            foreach(gameState state in a)
+            {
+                State s = new State(state);
+                States.Add(s.stateName, s);
+            }
 
+        }
         public void changeState(State a)
         {
-
-            Current = a;
+            string b = a.ToString();    
         }
+        public State getState(string a)
+        {
+            string key = a;
+            return States[key];
+                }
+        //Start -> Idle
+        //Idle -> TurnUp
+        //Idle -> Dead
+        //TurnUp -> Idle
+        // Dead -> Exit
+        
+
+        Dictionary<string, State> States = new Dictionary<string, State>();
+
         
         public class State
         {
             private string m_name;
 
-            public string Name
+            public string stateName
             {
                 get { return m_name; }
                 set { m_name = value; }
             }
-           public State(string name)
+           public State(Enum a)
             {
-                m_name = name;
+                m_name = a.ToString();
             }
         }
     }

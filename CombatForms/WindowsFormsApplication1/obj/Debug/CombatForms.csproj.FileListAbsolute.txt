@@ -8,3 +8,8 @@ C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplicatio
 C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\combatForms.Form1.resources
 C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\CombatForms.csproj.GenerateResource.Cache
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\crack\Documents\GitHub\IntroTocSharp\CombatForms\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
