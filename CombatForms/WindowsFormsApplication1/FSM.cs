@@ -19,8 +19,8 @@ namespace combatForms
     
     public class FSM
     {
-        public Delegate onEnter;
-        public Delegate onExit;
+        public delegate void onEnter();
+        public delegate void onExit();
         public FSM()
         {
             var a = Enum.GetValues(typeof(State));
@@ -36,16 +36,16 @@ namespace combatForms
             string b = a.ToString();    
         }
         public State getState(string a)
-        {
-            string key = a;
-            return States[key];
+        { 
+            currentState = States[a];
+            return currentState;
                 }
         //Start -> Idle
         //Idle -> TurnUp
         //Idle -> Dead
         //TurnUp -> Idle
         // Dead -> Exit
-        
+        private State currentState; 
 
         Dictionary<string, State> States = new Dictionary<string, State>();
 

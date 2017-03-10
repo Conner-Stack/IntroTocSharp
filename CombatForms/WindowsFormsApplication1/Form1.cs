@@ -40,11 +40,9 @@ namespace combatForms
            
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void saveButton_Click(object sender, EventArgs e)
         {
-          
-            }
-
+            Serializer<Singleton>.Serialize("GameSave", AppManager.Instance.DataManager);
         }
     }
 
