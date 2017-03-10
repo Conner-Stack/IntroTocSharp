@@ -15,8 +15,9 @@ namespace combatForms
         [STAThread]
         static void Main()
         {
+            
             FSM gameState = new FSM();
-           Singleton.
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

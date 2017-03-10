@@ -5,7 +5,7 @@ using System.IO;
 
 namespace combatForms
 {
-    class Serializer
+    class Serializer<T>
     {
         public static void Serialize(string fileName, T data)
         {

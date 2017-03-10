@@ -42,7 +42,7 @@ namespace combatForms
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            Serializer<Singleton>.Serialize("GameSave", AppManager.Instance.DataManager);
+            Serializer<Singleton>.Serialize("GameSave", Singleton.Instance.Container);
         }
     }
 

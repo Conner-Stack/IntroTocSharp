@@ -9,12 +9,9 @@ namespace combatForms
     public class Singleton
     {
         // Arbitrary variables and methods
-        public string
+        public Container entity;
 
-        public void PrintItem()
-        {
-            System.Console.WriteLine(item);
-        }
+      
 
         // Required Members of Singleton
         private static readonly Singleton instance;
@@ -30,7 +27,7 @@ namespace combatForms
 
         private Singleton()
         {
-            
+        
         }
 
     }
@@ -38,6 +35,9 @@ namespace combatForms
 
     public class Container
     {
+        public Character p1 = new Character(100, 10, "char1", true, false, 1);
+        public Character p2 = new Character(100, 10, "char2", true, false, 1);
+        public Character p3 = new Character(100, 10, "char3", true, false, 1);
 
         // Arbitrary variables and methods
 
