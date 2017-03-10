@@ -28,46 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.progressBar8 = new System.Windows.Forms.ProgressBar();
-            this.progressBar10 = new System.Windows.Forms.ProgressBar();
-            this.progressBar12 = new System.Windows.Forms.ProgressBar();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
+            this.Load = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Party 1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(753, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Party 2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -80,7 +53,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(70, 252);
+            this.button2.Location = new System.Drawing.Point(370, 163);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
             this.button2.TabIndex = 3;
@@ -89,39 +62,12 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(70, 342);
+            this.button3.Location = new System.Drawing.Point(707, 163);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 35);
             this.button3.TabIndex = 4;
             this.button3.Text = "character 3";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(732, 161);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 35);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "enemy 1";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(732, 252);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 33);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "enemy 2";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(732, 342);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 35);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "enemy 3";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -143,7 +89,7 @@
             // 
             this.progressBar1.BackColor = System.Drawing.Color.Gold;
             this.progressBar1.ForeColor = System.Drawing.Color.Transparent;
-            this.progressBar1.Location = new System.Drawing.Point(70, 291);
+            this.progressBar1.Location = new System.Drawing.Point(370, 202);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(75, 18);
             this.progressBar1.TabIndex = 11;
@@ -162,37 +108,10 @@
             // 
             this.progressBar5.BackColor = System.Drawing.Color.Gold;
             this.progressBar5.ForeColor = System.Drawing.Color.Transparent;
-            this.progressBar5.Location = new System.Drawing.Point(70, 383);
+            this.progressBar5.Location = new System.Drawing.Point(707, 202);
             this.progressBar5.Name = "progressBar5";
             this.progressBar5.Size = new System.Drawing.Size(75, 18);
             this.progressBar5.TabIndex = 15;
-            // 
-            // progressBar8
-            // 
-            this.progressBar8.BackColor = System.Drawing.Color.Gold;
-            this.progressBar8.ForeColor = System.Drawing.Color.Transparent;
-            this.progressBar8.Location = new System.Drawing.Point(732, 202);
-            this.progressBar8.Name = "progressBar8";
-            this.progressBar8.Size = new System.Drawing.Size(75, 18);
-            this.progressBar8.TabIndex = 18;
-            // 
-            // progressBar10
-            // 
-            this.progressBar10.BackColor = System.Drawing.Color.Gold;
-            this.progressBar10.ForeColor = System.Drawing.Color.Transparent;
-            this.progressBar10.Location = new System.Drawing.Point(732, 291);
-            this.progressBar10.Name = "progressBar10";
-            this.progressBar10.Size = new System.Drawing.Size(75, 18);
-            this.progressBar10.TabIndex = 20;
-            // 
-            // progressBar12
-            // 
-            this.progressBar12.BackColor = System.Drawing.Color.Gold;
-            this.progressBar12.ForeColor = System.Drawing.Color.Transparent;
-            this.progressBar12.Location = new System.Drawing.Point(732, 383);
-            this.progressBar12.Name = "progressBar12";
-            this.progressBar12.Size = new System.Drawing.Size(75, 18);
-            this.progressBar12.TabIndex = 22;
             // 
             // button7
             // 
@@ -222,30 +141,33 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
+            // Load
+            // 
+            this.Load.Location = new System.Drawing.Point(707, 436);
+            this.Load.Name = "Load";
+            this.Load.Size = new System.Drawing.Size(75, 23);
+            this.Load.TabIndex = 26;
+            this.Load.Text = "Load";
+            this.Load.UseVisualStyleBackColor = true;
+            this.Load.Click += new System.EventHandler(this.Load_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 471);
+            this.Controls.Add(this.Load);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.progressBar12);
-            this.Controls.Add(this.progressBar10);
-            this.Controls.Add(this.progressBar8);
             this.Controls.Add(this.progressBar5);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -255,26 +177,18 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar5;
-        private System.Windows.Forms.ProgressBar progressBar8;
-        private System.Windows.Forms.ProgressBar progressBar10;
-        private System.Windows.Forms.ProgressBar progressBar12;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button Load;
     }
 }
 

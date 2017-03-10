@@ -13,16 +13,16 @@ namespace combatForms
 
     public partial class Form1 : Form
     {
-      
-       
+
+
         public Form1()
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -32,17 +32,25 @@ namespace combatForms
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Enabled = true;
-        }
+
+
 
         private void progressBar2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            Serializer<Singleton>.Serialize("GameSave", Singleton.Instance.entity);
+            Serializer<Container>.Serialize("GameSave", Singleton.Instance.entity);
         }
-    }
+
+        private void Load_Click(object sender, EventArgs e)
+        {
+            private void Load_Game_Click(object sender, EventArgs e)
+        {
+            Singleton.Instance.entity = Serializer<Container>.Deserialize("GameSave");
+        }
+    } 
+}
 
